@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.progress-bar {
+    position: relative;
+    left: 40px;
+    width: 500px;
+    height: 1.3em;
+    background-color: #111;
+    border-radius: 1.5em;
+    color: black;
+}
+
+.progress-bar::before {
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.9em;
+    top: 0.1em;
+    bottom: .5em;
+    width: calc(var(--width, 0) * 1%);
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+    background-color: var(--backgroundcol, green);
+    border-radius: 1em;
+    padding: 0.55em;
+    color: var(--colortext, black);
+}
+
+#icon {
+    z-index: 9;
+    position: relative;
+    margin: -40px;
+    left: 45px;
+    margin-top: 20px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 500px;
+    text-align: center;
+    display: flex;
+    z-index: 2;
+}
+
+#heartimg {
+    margin: auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    animation: zoom-in-zoom-out 2s ease infinite;
+}
+
+.progress-barHunger {
+    position: relative;
+    left: 40px;
+    width: 500px;
+    height: 1.3em;
+    background-color: #111;
+    border-radius: 1.5em;
+    color: black;
+}
+
+.progress-barHunger::before {
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.9em;
+    top: 0.1em;
+    bottom: .5em;
+    width: calc(var(--width1, 0) * 1%);
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+    background-color: var(--backgroundcol1, green);
+    border-radius: 1em;
+    padding: 0.55em;
+    color: var(--colortext1, black);
+}
+
+#iconHunger {
+    z-index: 9;
+    position: relative;
+    margin: -40px;
+    left: 45px;
+    margin-top: 20px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 500px;
+    text-align: center;
+    display: flex;
+    z-index: 2;
+}
+
+#hungryimg {
+    margin: auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+#gameover {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: -100px;
+    background-color: grey;
+    z-index: 9999;
+    text-align: center;
+    display: flex;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 6px;
+    margin: auto;
+    display: none;
+    border-radius: 180px;
+}
+
+#menuimg {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+    margin-top: 40px
+}
+
+#restartbutton {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(120, 240, 120);
+    border: none;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+#restartbutton:hover {
+    background-color: rgb(33, 173, 33);
+}
+
+#restartbutton:active {
+    background-color: green;
+}
+
+#restart {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

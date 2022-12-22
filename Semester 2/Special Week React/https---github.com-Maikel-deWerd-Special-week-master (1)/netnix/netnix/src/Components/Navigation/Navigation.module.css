@@ -1,0 +1,28 @@
+.navigation{
+    background-color: #141414;
+    display: flex;
+    color: #e5e5e5;
+    height: 58px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainNavigation{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 58px;
+}
+
+.navigationList{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationItem{
+    margin-left: 1rem;
+}

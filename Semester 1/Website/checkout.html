@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="drinkitlogo.png">
+<html lang="en">
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Drink It</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id = "Wholepage"></div>
+    <header>
+        <h5><a href="login.html">log in</a></h5>
+        <img class="drinkit" src="Drinkit.png" alt="Drinkitlogo">
+        <a href = "index.html"><img class="textlogo" src="Textlogo.png" alt="Textlogo"></a>
+        <a href="cart.html"><img class="cart2" src="Shoppingcart.png" alt="Shoppingcart"></a>
+    </header>   
+
+    <nav>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3 style="font-family: Panton;color: white;">Billing Address</h3>
+                  <label style="font-family: Panton;color: white;" style="font-family: Panton;color: white;" for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                  <label style="font-family: Panton;color: white;" style="font-family: Panton;color: white;" for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="john@example.com">
+                  <label style="font-family: Panton;color: white;" style="font-family: Panton;color: white;" for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                  <label  style="font-family: Panton;color: white;" for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="New York">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label style="font-family: Panton;color: white;" for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="NY">
+                    </div>
+                    <div class="col-50">
+                      <label style="font-family: Panton;color: white;" for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="10001">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3 style="font-family: Panton;color: white;">Payment</h3>
+                  <label style="font-family: Panton;color: white;" for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label style="font-family: Panton;color: white;" for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                  <label style="font-family: Panton;color: white;" for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label style="font-family: Panton;color: white;" for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label style="font-family: Panton;color: white;" for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label style="font-family: Panton;color: white;" for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label style="font-family: Panton;color: white;">
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input style="font-family: Panton;color: white;" type="submit" value="Continue to checkout" class="btn">
+            </form>
+          </div>
+        </div>
+      
+
+        </div>
+      </div>
+
+</body>
+
+</html>

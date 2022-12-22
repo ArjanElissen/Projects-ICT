@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+    <meta charset="UTF-8">
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Tutorial</title>
+
+</head>
+
+<body>
+    <div id="divinfo">
+        <div id="globaldiv">
+            <div id="headtextdiv">
+                <h1>Your Items</h1>
+            </div>
+            <div id="input">
+                <input id="typebox" type="text"><button id="buttoninput"><img id="inputimg" src="./Images/addicon.png"></button><button id="buttoninputdelete"><img id="inputimg" src="./Images/delete.png"></button></input><br>
+                <!--<p>Sort</p><input id="sortbox" type="text"></input><br><br>-->
+            </div>
+            <div id="scrolllist">
+                <div>
+                    <table>
+                        <thead>
+                            <!--<th>Shopping List</th>-->
+                            <!--<th>Sort</th>-->
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div><br>
+        <footer id="bottom">
+            <div id="buttondiv">
+                <button id="send"><img id="adddelete" src="./Images/addicon.png"></button>
+                <button id="send2"><img id="adddelete" src="./Images/addicon.png"></button>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

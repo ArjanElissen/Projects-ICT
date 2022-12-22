@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CurrentLocationPOC</string>
+    <string name="Latitude">Latitude:</string>
+</resources>

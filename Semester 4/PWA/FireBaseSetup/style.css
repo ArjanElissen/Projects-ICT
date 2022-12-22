@@ -1,0 +1,324 @@
+    h1 {
+        font-size: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    
+    td {
+        position: relative;
+        border: solid 3px;
+        border-color: black;
+        width: 700px;
+        height: 80px;
+        margin: 100px 100px 100px 100px;
+    }
+    
+    tr {
+        font-size: 30px;
+    }
+    
+    table tr:nth-child(odd) td {
+        background-color: rgb(224, 224, 224);
+    }
+    
+    table tr:nth-child(even) td {
+        background-color: white;
+    }
+    
+    #deletebutton {
+        width: 80px;
+        height: 100px;
+        display: none;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+    }
+    
+    #buttoninput {
+        display: inline;
+        width: 20%;
+        height: 20%;
+        background-color: transparent;
+        border: none;
+    }
+    
+    #buttoninputdelete {
+        display: inline;
+        width: 20%;
+        height: 20%;
+        background-color: transparent;
+        border: none;
+    }
+    
+    #inputimg {
+        width: 50%;
+        height: 50%;
+    }
+    
+    #send,
+    #send2 {
+        display: none;
+        width: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #input {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    
+    #divinfo {
+        width: 100%;
+        height: 100%;
+        background-color: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    #crossicon {
+        width: 30%;
+    }
+    
+    #adddelete {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    
+    #send,
+    #send2,
+    #addingitems,
+    #delitems {
+        background-color: transparent;
+        border: none;
+    }
+    
+    #send:hover,
+    #send:hover,
+    #addingitems:hover,
+    #delitems:hover {
+        background-color: transparent;
+        border: none;
+        scale: 1.1;
+    }
+    
+    #buttondiv {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #scrolllist {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        overflow: scroll;
+        height: 70%;
+        font-size: 20px;
+    }
+    
+    #scrolllist::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #globaldiv {
+        background-color: transparent;
+        border: solid 1px;
+        width: 80%;
+        height: 80%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #typebox {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        width: 80%;
+        margin-right: auto;
+        font-size: 30px;
+    }
+    
+    #headtextdiv {
+        background-color: black;
+        display: inline-block;
+        margin: 0px auto 10px auto;
+        text-align: center;
+        width: 100%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    
+    #checked {
+        position: absolute;
+        margin: 0;
+        right: 20px;
+        text-align: center;
+        justify-content: center;
+        top: 35%;
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        accent-color: green;
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        5% {
+            transform: translate(-1px, 2px) rotate(-0deg);
+        }
+        10% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        15% {
+            transform: translate(3px, 1px) rotate(-0deg);
+        }
+        20% {
+            transform: translate(-1px, -1px) rotate(0deg);
+        }
+        25% {
+            transform: translate(-1px, 2px) rotate(-0deg);
+        }
+        30% {
+            transform: translate(-2px, 1px) rotate(0deg);
+        }
+        35% {
+            transform: translate(1px, 1px) rotate(-0deg);
+        }
+        40% {
+            transform: translate(-1px, -1px) rotate(0deg);
+        }
+        50% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+        55% {
+            transform: translate(1px, -2px) rotate(-0deg);
+        }
+        60% {
+            transform: translate(-1px, 2px) rotate(-0deg);
+        }
+        65% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+            transform: translate(3px, 1px) rotate(-0deg);
+        }
+        75% {
+            transform: translate(-1px, -1px) rotate(0deg);
+        }
+        80% {
+            transform: translate(-1px, 2px) rotate(-0deg);
+        }
+        85% {
+            transform: translate(-2px, 1px) rotate(0deg);
+        }
+        90% {
+            transform: translate(1px, 1px) rotate(-0deg);
+        }
+        95% {
+            transform: translate(-1px, -1px) rotate(0deg);
+        }
+        100% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        body {
+            background-color: grey;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            justify-content: center;
+            text-align: center;
+        }
+        #deletebutton {
+            width: 80px;
+            height: 100px;
+            display: none;
+            justify-content: center;
+            border: none;
+        }
+        #send,
+        #send2 {
+            display: none;
+            width: auto;
+        }
+        #input {
+            display: block;
+            width: auto;
+        }
+        #divinfo {
+            background-color: whitesmoke;
+            margin-top: 0;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+            left: 0;
+            right: 0;
+        }
+        #crossicon {
+            width: 40%;
+        }
+        #adddelete {
+            width: 60px;
+            height: 60px;
+            margin: 120px auto;
+        }
+        #send,
+        #send2,
+        #addingitems,
+        #delitems {
+            background-color: transparent;
+            border: none;
+        }
+        #send:hover,
+        #send:hover,
+        #addingitems:hover,
+        #delitems:hover {
+            background-color: transparent;
+            border: none;
+            scale: 1.1;
+        }
+        #buttondiv {
+            margin-top: -20%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        #typebox {
+            position: relative;
+            display: block;
+            margin-left: auto;
+            width: 80%;
+            margin-right: auto;
+            font-size: 30px;
+        }
+        #scrolllist {
+            height: 68%;
+        }
+        #globaldiv {
+            width: 90%;
+            height: 90%;
+            border: solid 10px;
+            border-color: black;
+        }
+        #inputimg {
+            width: 100%;
+            height: 100%;
+        }
+    }

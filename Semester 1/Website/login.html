@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="drinkitlogo.png">
+<html lang="en">
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Drink It</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id = "Wholepage"></div>
+    <header>
+        <h5><a href="login.html">log in</a></h5>
+        <img class="drinkit" src="Drinkit.png" alt="Drinkitlogo">
+        <a href = "index.html"><img class="textlogo" src="Textlogo.png" alt="Textlogo"></a>
+        <a href="cart.html"><img class="cart" src="Shoppingcart.png" alt="Shoppingcart"></a>
+    </header>   
+
+    <nav>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="loginface.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b style="font-family: Panton;color: white;">Email</b></label>
+          <input type="text" placeholder="Enter Email" name="uname" required>
+      
+          <label for="psw"><b style="font-family: Panton;color: white;">Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button style="font-family: Panton;color: white;" type="submit">Login</button>
+          <label style="font-family: Panton;color: white;">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container">
+          <span class="psw">Forgot <a href="#">password?</a></span>
+          <span class="psw">Make <a href="account.html">account</a></span>
+        </div>
+      </form>
+
+</body>
+
+</html>
